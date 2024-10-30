@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metallica</title>
     <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body><!-- Contenu de la page -->
+<body><!-- Contenu de la page, visible -->
     <header>
 
         <section>
@@ -21,7 +21,7 @@
             <img src="Assets/Nom groupe.png" alt="Photo du nom du groupe" width="200" height="100">
 
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="#Bio">Biographie</a></li>
                     <li><a href="#Top">Top Titres</a></li>
                     <li><a href="#Albums">Albums</a></li>
@@ -36,21 +36,18 @@
             </div>
         </section>
 
-        <article>
-            <p>Metallica est un <u>groupe américain de <strong>heavy metal</strong></u>, originaire de Californie. Il
-                est
-                considéré comme l'un des plus grands groupes de metal de tous les temps.<br><a
-                    href="https://fr.wikipedia.org/wiki/Metallica" target="blank">Voir sur Wikipedia</a></p>
-        </article>
-
     </header>
     <article>
+
+        <img src="Assets/Metallica_membres.jpg" alt="membres du groupe" width="200" class="membres">
+
         <h2 id="Bio">Biographie</h2>
 
         <p>Metallica est un groupe américain de heavy metal qui, avec Slayer et Anthrax, développe le sous-genre speed
             metal au début des années 1980. Les membres principaux sont le chanteur et guitariste James Hetfield, le
-            batteur Lars Ulrich, le guitariste Kirk Hammett et le bassiste Cliff Burton.</p>
-        <img src="Assets/Metallica_membres.jpg" alt="membres du groupe" width="200">
+            batteur Lars Ulrich, le guitariste Kirk Hammett et le bassiste Cliff Burton.
+            <a href="https://fr.wikipedia.org/wiki/Metallica" target="blank">Voir sur Wikipedia</a>
+        </p>
     </article>
     </header>
     <main>
@@ -106,7 +103,7 @@
         </section>
         <section>
             <h2 id="Albums">Albums</h2>
-            <ul>
+            <ul class="albums">
                 <li><img src="Assets/Album_KEA.jpg" alt="album Kill'Em All" widht:50 height=50><strong>Kill 'Em
                         All</strong>
                 </li>
@@ -156,19 +153,16 @@
             </ul>
         </section>
 
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/755971042&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-        <div
-            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-            <a href="https://soundcloud.com/officialmetallica" title="Metallica" target="_blank"
-                style="color: #cccccc; text-decoration: none;">Metallica</a> · <a
-                href="https://soundcloud.com/officialmetallica/orion-remastered" title="Orion (Remastered)"
-                target="_blank" style="color: #cccccc; text-decoration: none;">Orion (Remastered)</a>
-        </div>
-
     </main>
 
     <footer>
+        <a href="mailto:Leelou.moulin@latoile.em-lyon.co" class="mail">Leelou.moulin@latoile.em-lyon.com</a>
+        <div class="musique">
+            <a href="https://open.spotify.com/intl-fr/artist/2ye2Wgw4gimLv2eAKyk1NB" target="blank">
+                <img src="Assets/Spotify_logo-removebg-preview.png" alt="Spotify" width="100"></a>
+            <a href="https://www.deezer.com/fr/artist/119" target="blank">
+                <img src="Assets/deezer_logo-removebg-preview.png" alt="Deezer" width="100"></a>
+        </div>
 
     </footer>
 

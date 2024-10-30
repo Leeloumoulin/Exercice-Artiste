@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/1b/4f/86/1b4f86ce34326af1540173b7c75e78d9.gif);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    text-align:center;
+}
+
+footer {
+    background-color: black;
+    border-style:double;
+    border-color: rgb(47, 46, 46);
+}
+
+.albums {
+    list-style: none;
+}
+
+.mail {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.membres {
+    border-radius: 50%;
+}

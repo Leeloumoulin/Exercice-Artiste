@@ -1,171 +1,364 @@
 <!-- Mettre un ! pour doctype ect -->
 <!DOCTYPE html>
 <html lang="fr">
-
-<head><!-- Invisible, cerveau page -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Invisible, cerveau page -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metallica</title>
-    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body><!-- Contenu de la page, visible -->
+  <body>
+    <!-- Contenu de la page, visible -->
     <header>
+      <img
+        src="Assets/Nom groupe.png"
+        alt="Photo du nom du groupe"
+        width="200"
+        height="100"
+        class="photoNom"
+      />
 
-        <section>
+      <section>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#Bio" class="bouton">Biographie</a></li>
+            <li><a href="#Top" class="bouton">Top Titres</a></li>
+            <li><a href="#Albums" class="bouton">Albums</a></li>
+            <li><a href="#Artistes" class="bouton">Artistes Similaires</a></li>
+          </ul>
+        </nav>
 
-            <img src="Assets/Metallica-Stade-de-France-20190512.webp" alt="Photo d'un concert" width="100%"
-                height="200">
+        <img
+          src="Assets/Metallica_membres.jpg"
+          alt="membres du groupe"
+          width="200"
+          class="membres"
+        />
 
-            <img src="Assets/Nom groupe.png" alt="Photo du nom du groupe" width="200" height="100" class="photoNom">
+        <div class="Nom">
+          <h1>Metallica</h1>
 
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#Bio">Biographie</a></li>
-                    <li><a href="#Top">Top Titres</a></li>
-                    <li><a href="#Albums">Albums</a></li>
-                    <li><a href="#Artistes">Artistes Similaires</a></li>
-                </ul>
-            </nav>
-
-            <div>
-                <h1>Metallica</h1>
-
-                <p>7 508 887 fans sur <a href="https://www.deezer.com/fr/artist/119" target="blank">Deezer</a></p>
-            </div>
-        </section>
-
+          <p class="fans">
+            7 508 887 fans sur
+            <a href="https://www.deezer.com/fr/artist/119" target="blank"
+              >Deezer</a
+            >
+          </p>
+        </div>
+      </section>
     </header>
-    <article>
 
-        <img src="Assets/Metallica_membres.jpg" alt="membres du groupe" width="200" class="membres">
-
+    <main>
+      <article class="biographie">
         <h2 id="Bio">Biographie</h2>
 
-        <p>Metallica est un groupe américain de heavy metal qui, avec Slayer et Anthrax, développe le sous-genre speed
-            metal au début des années 1980. Les membres principaux sont le chanteur et guitariste James Hetfield, le
-            batteur Lars Ulrich, le guitariste Kirk Hammett et le bassiste Cliff Burton.
-            <a href="https://fr.wikipedia.org/wiki/Metallica" target="blank">Voir sur Wikipedia</a>
+        <p>
+          Metallica est un groupe américain de heavy metal qui, avec Slayer et
+          Anthrax, développe le sous-genre speed metal au début des années 1980.
+          Les membres principaux sont le chanteur et guitariste James Hetfield,
+          le batteur Lars Ulrich, le guitariste Kirk Hammett et le bassiste
+          Cliff Burton.
+          <a href="https://fr.wikipedia.org/wiki/Metallica" target="blank"
+            >Voir sur Wikipedia</a
+          >
         </p>
-    </article>
-    </header>
-    <main>
-        <section>
-            <h2 id="Top">Top Titres</h2>
-            <ol>
-                <li>Nothing Else Matters<iframe width="100%" height="" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206491284&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <div
-                        style="font-size: 10px; color: #ffffff;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                        <a href="https://soundcloud.com/officialmetallica" title="Metallica" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Metallica</a> · <a
-                            href="https://soundcloud.com/officialmetallica/nothing-else-matters-live-12"
-                            title="Nothing Else Matters (Live - May 30, 2014 - Stockholm, Sweden)" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Nothing Else Matters (Live - May 30, 2014 -
-                            Stockholm, Sweden)</a>
-                    </div>
-                </li>
-                <li>Enter Sandman<iframe width="100%" height="" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1069042870&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <div
-                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                        <a href="https://soundcloud.com/officialmetallica" title="Metallica" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Metallica</a> · <a
-                            href="https://soundcloud.com/officialmetallica/enter-sandman-remastered-2021"
-                            title="Enter Sandman (Remastered 2021)" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Enter Sandman (Remastered 2021)</a>
-                    </div>
-                </li>
-                <li>The Unforgiven<iframe width="100%" height="" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1117922704&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <div
-                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                        <a href="https://soundcloud.com/officialmetallica" title="Metallica" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Metallica</a> · <a
-                            href="https://soundcloud.com/officialmetallica/the-unforgiven-remastered-2021"
-                            title="The Unforgiven (Remastered 2021)" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">The Unforgiven (Remastered 2021)</a>
-                    </div>
-                </li>
-                <li>Master of Puppets<iframe width="100%" height="" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/755973217&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <div
-                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                        <a href="https://soundcloud.com/officialmetallica" title="Metallica" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Metallica</a> · <a
-                            href="https://soundcloud.com/officialmetallica/master-of-puppets-remastered"
-                            title="Master of Puppets (Remastered)" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">Master of Puppets (Remastered)</a>
-                    </div>
-                </li>
-            </ol>
-        </section>
-        <section>
-            <h2 id="Albums">Albums</h2>
-            <ul class="albums">
-                <li><img src="Assets/Album_KEA.jpg" alt="album Kill'Em All" widht:50 height=50><strong>Kill 'Em
-                        All</strong>
-                </li>
-                <p><em>Sortie : 29 juillet 1983</em></p>
-                <li><img src="Assets/RideTheLightning_album.jpg" alt="Album Ride the Lightning" widht:50
-                        height=50><strong>Ride
-                        the Lightning</strong></li>
-                <p><em>Sortie : 27 juillet 1984</em></p>
-                <li><img src="Assets/Master_of_puppets.jpg" alt="album Master of Puppets" widht:50
-                        height=50><strong>Master
-                        of
-                        Puppets</strong></li>
-                <p><em>Sortie : 3 mars 1986</em></p>
-                <li><img src="Assets/Justice for all.jpg" alt="album And justice for All" widht:50
-                        height=50><strong>...And
-                        Justice for All</strong></li>
-                <p><em>Sortie : 25 août 1988</em></p>
-                <li><img src="Assets/s-l400.jpg" alt="album The Black Album" widht:50 height=50><strong>Metallica (The
-                        Black Album)</strong></li>
-                <p><em>Sortie : 12 août 1991</em></p>
-                <li><img src="Assets/load.jpg" alt="album Load" widht:50 height=50><strong>Load</strong></li>
-                <p><em>Sortie : 4 juin 1994</em></p>
-                <li><img src="Assets/Reload.jpg" alt="album Reload" widht:50 height=50><strong>ReLoad</strong></li>
-                <p><em>Sortie : 18 novembre 1997</em></p>
-                <li><img src="Assets/st anger.jpg" alt="album St.Anger" widht:50 height=50><strong>St. Anger</strong>
-                </li>
-                <p><em>Sortie : 5 juin 2003</em></p>
-                <li><img src="Assets/death_magnetic.jpg" alt="album Death Magnetic" widht:50 height=50><strong>Death
-                        Magnetic</strong></li>
-                <p><em>Sortie : 12 septembre 2008</em></p>
-                <li><img src="Assets/hardwired.jpg" alt="album Hardwired… to Self-Destruct" widht:50
-                        height=50><strong>Hardwired… to Self-Destruct</strong></li>
-                <p><em>Sortie : 18 novembre 2016</em></p>
-                <li><img src="Assets/72.jpg" alt="album 72 Seasons" widht:50 height=50><strong>72 Seasons </strong></li>
-                <p><em>Sortie : 14 avril 2023</em></p>
-            </ul>
-        </section>
-        <section>
-            <h2 id="Artistes">Artistes Similaires</h2>
-            <ul>
-                <li><strong>Iron Maiden</strong></li>
-                <li><strong>Black Sabbath</strong></li>
-                <li><strong>Slipknot</strong></li>
-                <li><strong>Guns N' Roses</strong></li>
-                <li><a href="ACDC.html" target="blank"><strong>AC/DC</strong></a></li>
-                <li><strong>Avenged Sevenfold</strong></li>
-            </ul>
-        </section>
+      </article>
 
+      <section class="top_titres">
+        <h2 id="Top">Top Titres</h2>
+        <ol class="top">
+          <li>
+            Nothing Else Matters<iframe
+              width="100%"
+              height=""
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206491284&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #ffffff;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/officialmetallica"
+                title="Metallica"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Metallica</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/officialmetallica/nothing-else-matters-live-12"
+                title="Nothing Else Matters (Live - May 30, 2014 - Stockholm, Sweden)"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Nothing Else Matters (Live - May 30, 2014 - Stockholm,
+                Sweden)</a
+              >
+            </div>
+          </li>
+          <li>
+            Enter Sandman<iframe
+              width="100%"
+              height=""
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1069042870&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/officialmetallica"
+                title="Metallica"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none"
+                >Metallica</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/officialmetallica/enter-sandman-remastered-2021"
+                title="Enter Sandman (Remastered 2021)"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none"
+                >Enter Sandman (Remastered 2021)</a
+              >
+            </div>
+          </li>
+          <li>
+            The Unforgiven<iframe
+              width="100%"
+              height=""
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1117922704&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/officialmetallica"
+                title="Metallica"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Metallica</a
+              >
+
+              <a
+                href="https://soundcloud.com/officialmetallica/the-unforgiven-remastered-2021"
+                title="The Unforgiven (Remastered 2021)"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >The Unforgiven (Remastered 2021)</a
+              >
+            </div>
+          </li>
+          <li>
+            Master of Puppets<iframe
+              width="100%"
+              height=""
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/755973217&color=%238c26d2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/officialmetallica"
+                title="Metallica"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Metallica</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/officialmetallica/master-of-puppets-remastered"
+                title="Master of Puppets (Remastered)"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Master of Puppets (Remastered)</a
+              >
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="albums">
+        <h2 id="Albums">Albums</h2>
+        <ul>
+          <li>
+            <strong>Kill 'Em All</strong>
+            <img src="Assets/Album_KEA.jpg" alt="album Kill'Em All" />
+            <p>Sortie : 29 juillet 1983</p>
+          </li>
+
+          <li>
+            <strong>Ride the Lightning</strong>
+            <img
+              src="Assets/RideTheLightning_album.jpg"
+              alt="Album Ride the Lightning"
+            />
+            <p>Sortie : 27 juillet 1984</p>
+          </li>
+
+          <li>
+            <strong>Master of Puppets</strong>
+            <img
+              src="Assets/Master_of_puppets.jpg"
+              alt="album Master of Puppets"
+            />
+            <p>Sortie : 3 mars 1986</p>
+          </li>
+
+          <li>
+            <strong>...And Justice for All</strong>
+            <img
+              src="Assets/Justice for all.jpg"
+              alt="album And justice for All"
+            />
+            <p>Sortie : 25 août 1988</p>
+          </li>
+
+          <li>
+            <strong>Metallica (The Black Album)</strong>
+            <img src="Assets/s-l400.jpg" alt="album The Black Album" />
+            <p>Sortie : 12 août 1991</p>
+          </li>
+
+          <li>
+            <strong>Load</strong>
+            <img src="Assets/load.jpg" alt="album Load" />
+            <p>Sortie : 4 juin 1994</p>
+          </li>
+
+          <li>
+            <strong>ReLoad</strong>
+            <img src="Assets/Reload.jpg" alt="album Reload" />
+            <p>Sortie : 18 novembre 1997</p>
+          </li>
+
+          <li>
+            <strong>St. Anger</strong
+            ><img src="Assets/st anger.jpg" alt="album St.Anger" />
+            <p>Sortie : 5 juin 2003</p>
+          </li>
+
+          <li>
+            <strong>Death Magnetic</strong>
+            <img src="Assets/death_magnetic.jpg" alt="album Death Magnetic" />
+            <p>Sortie : 12 septembre 2008</p>
+          </li>
+
+          <li>
+            <strong>Hardwired… to Self-Destruct</strong>
+            <img
+              src="Assets/hardwired.jpg"
+              alt="album Hardwired… to Self-Destruct"
+            />
+            <p>Sortie : 18 novembre 2016</p>
+          </li>
+
+          <li>
+            <strong>72 Seasons </strong>
+            <img src="Assets/72.jpg" alt="album 72 Seasons" />
+            <p>Sortie : 14 avril 2023</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="Artistes">Artistes Similaires</h2>
+        <ul>
+          <li><strong>Iron Maiden</strong></li>
+          <li><strong>Black Sabbath</strong></li>
+          <li><strong>Slipknot</strong></li>
+          <li><strong>Guns N' Roses</strong></li>
+          <li>
+            <a href="ACDC.html" target="blank"><strong>AC/DC</strong></a>
+          </li>
+          <li><strong>Avenged Sevenfold</strong></li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <a href="mailto:Leelou.moulin@latoile.em-lyon.co" class="mail">Leelou.moulin@latoile.em-lyon.com</a>
-        <div class="musique">
-            <a href="https://open.spotify.com/intl-fr/artist/2ye2Wgw4gimLv2eAKyk1NB" target="blank">
-                <img src="Assets/Spotify_logo-removebg-preview.png" alt="Spotify" width="100"></a>
-            <a href="https://www.deezer.com/fr/artist/119" target="blank">
-                <img src="Assets/deezer_logo-removebg-preview.png" alt="Deezer" width="100"></a>
-        </div>
-
+      <a href="mailto:Leelou.moulin@latoile.em-lyon.co" class="mail"
+        >Leelou.moulin@latoile.em-lyon.com</a
+      >
+      <div class="Logos">
+        <a
+          href="https://open.spotify.com/intl-fr/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          target="blank"
+          class="musique"
+        >
+          <img
+            src="Assets/Spotify_logo-removebg-preview.png"
+            alt="Spotify"
+            width="100"
+        /></a>
+        <a
+          href="https://www.deezer.com/fr/artist/119"
+          target="blank"
+          class="musique"
+        >
+          <img
+            src="Assets/deezer_logo-removebg-preview.png"
+            alt="Deezer"
+            width="70"
+        /></a>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

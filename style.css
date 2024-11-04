@@ -1,200 +1,178 @@
 /*début header*/
 
 h1 {
-    font-size: 4vw;
-    color: #FFFFFF;
-    text-shadow: 6px 4px #494949;
-    color: #FFFFFF;      
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .Nom {
-    position: absolute;
-    left: 19vw;
-    top:205px;
-    height:auto;
-    width: auto;
+  position: absolute;
+  left: 21vw;
+  top: 150px;
+  height: auto;
+  width: auto;
 }
-
 
 header {
-    background-image:url(Assets/47206-report-du-second-concert-de-metallica-au-stade-de-france-le-19-05-2023.jpg.jpg);
-    background-size: cover; /* Etirer image */
-    background-repeat: no-repeat;
-    border-style: double;
-    height: 300px;
+  background-image: url(Assets/47206-report-du-second-concert-de-metallica-au-stade-de-france-le-19-05-2023.jpg.jpg);
+  background-size: cover; /* Etirer image */
+  background-repeat: no-repeat;
+  border-style: double;
+  border-radius: 30px;
+  height: 230px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.navigation { 
-    list-style:none;
-    display:flex;
-    text-align: center ;
-    top: 265px;
-    right: 1vw;
-    margin-left: 30vw;
-    position:absolute; /*changer la position du menu pour qu'elle reste en place*/
+.navigation {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  top: 20px;
+  margin-left: 25vw;
+  position: absolute; /*changer la position du menu pour qu'elle reste en place*/
 }
 
-.bouton { 
-    margin-inline: 8px; /* espace entre boutons */
-    background-color: rgb(5, 0, 12);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style:groove ;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-spacing: 30px;
-    padding: 10px 17px;
-    box-shadow: 4px 4px 9px 2px #868686;
-    display:inline-block;
-
+.bouton {
+  margin-inline: 8px; /* espace entre boutons */
+  background-color: rgb(5, 0, 12);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-style: groove;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-spacing: 30px;
+  padding: 10px 17px;
+  box-shadow: 4px 4px 9px 2px #868686;
+  display: inline-block;
 }
 
 .membres {
-    border-radius: 50%;
-    border: 10px double white;
-    width: 15vw;
-    height: 15vw;
-    top: 230px;
-    left: 2vw;
-    position:absolute;
-    display: flex;
+  border-radius: 50%;
+  border: 10px double white;
+  width: 15vw;
+  height: 15vw;
+  top: 150px;
+  left: 3vw;
+  position: absolute;
+  display: flex;
 }
 
 .fans {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 /*Fin header*/
 
 /*Début main*/
 
-body {
-    background-image: url(https://i.pinimg.com/originals/1b/4f/86/1b4f86ce34326af1540173b7c75e78d9.gif);
-    color: white;
-    max-height: fit-content;
- }
-
-a { 
-    color: rgb(210, 221, 108);
-    text-decoration: none;
-    font-weight: bolder;
+.top_titres {
+  float: right;
 }
+
+body {
+  color: white;
+  background-repeat: repeat-x;
+  background: #242424;
+  background-size: 400px;
+  overflow-x: hidden;
+}
+
 
 .biographie {
-    border: 8px double rgb(255, 255, 255);
-    background-color: rgb(5, 0, 12);
-    width: 400px;
-    height: 300px;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 13vw;
-    margin-left: 50px;
-    float: left;
+  float: left;
+  display: grid;
+  position: relative;
+  top: 150px;
+  width: 600px;
+  height: 300px;
+  font-size: 20px;
+  text-align: center;
 }
 
-.top {
-    list-style: none;
+.bio_plus {
+  flex-direction: row;
+  overflow: scroll;
+  height: 300px;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #1d1d1d;
+  font-size: 20px;
 }
-.top_titres {
-    float: right;
-    border: 8px double rgb(255, 255, 255);
-    background-color: rgb(5, 0, 12);
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 13vw;
-    margin-right: 50px;
+
+a {
+  color: rgb(210, 221, 108);
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .albums {
-    border: 8px double rgb(255, 255, 255);
-    background-color: rgb(5, 0, 12);
-    font-size: 15px;
-    padding-top: 50px;
-    width: 100%;
-    height: 500px;
-    top: 775px;
-    display: flex;
-    flex-direction: column;
-
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+  flex-direction: row;
+  display: flex;
+  height: 410px;
+  width: 100%;
+  background-color: #1d1d1d;
+  background-size: contain;
+  border: solid 4px #111111;
 }
 
 .albums h2 {
-    text-align: center;
-
+  text-align: center;
+  margin-top: 140px;
+  padding: 30px;
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
 }
 
-.albums p {
-    font-style: italic;
-    margin: 5px;
+.albums .album {
+  text-align: center;
 }
 
-.albums img {
-    height: 70px;
-    width: 70px;
-    padding-top: 10px;
-    margin: auto;
-    display: flex;
-    
-} 
-
-.albums ul {
-    list-style: none;
-    float: left;
-    display:flex;
-    height: 100px;
-    width: 100px;    
-    
+.albums div img {
+  height: auto;
+  width: 320px;
 }
 
-.albums li {
-    float: left;
-    height: 100px;
-    width: 100px;
-    position: relative;
-    margin-right: 50px;
-    margin-inline: 30px;
-    
-}
-
-.albums li strong {
-    font-size: 15px;
-    
-}
-
-h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 /*Fin main*/
 
 /*Début footer*/
 
 footer {
-    background-color: black;
-    border-style:double;
-    border-color: rgb(47, 46, 46);
-    height: 90px;
-    width: 100%;
-    margin-top: 2500px;
+  background-color: black;
+  border-style: double;
+  border-color: rgb(47, 46, 46);
+  height: 90px;
+  width: 100%;
+  margin-top: 2500px;
 }
 
-
-
 .mail {
-    text-decoration: none;
-    color: aliceblue;
-    position: relative;
-    margin: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  margin: 10px;
 }
 
 .Logos {
-    position: relative;
-    padding-left: 80%;
-    padding-bottom: 20px;
-    display: flex;
+  position: relative;
+  padding-left: 80%;
+  padding-bottom: 20px;
+  display: flex;
 }
 /*Fin footer*/

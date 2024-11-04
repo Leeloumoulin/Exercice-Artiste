@@ -1,30 +1,44 @@
-/*début header*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+h1, .albums h2 {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+}
 
 h1 {
   font-size: 50px;
   color: #ffffff;
-  font-family: "Metal Mania", system-ui;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.Nom, .membres {
+  position: absolute;
 }
 
 .Nom {
-  position: absolute;
   left: 21vw;
   top: 150px;
-  height: auto;
-  width: auto;
+}
+
+.membres {
+  top: 150px;
+  left: 3vw;
+  border: 10px double white;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  display: flex;
 }
 
 header {
-  background-image: url(Assets/47206-report-du-second-concert-de-metallica-au-stade-de-france-le-19-05-2023.jpg.jpg);
-  background-size: cover; /* Etirer image */
-  background-repeat: no-repeat;
-  border-style: double;
+  background: url(Assets/47206-report-du-second-concert-de-metallica-au-stade-de-france-le-19-05-2023.jpg.jpg) no-repeat center/cover;
+  border: double;
   border-radius: 30px;
   height: 230px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px;
+}
+
+.top_titres {
+  float: right;
   margin-right: 20px;
 }
 
@@ -32,58 +46,30 @@ header {
   list-style: none;
   display: flex;
   text-align: center;
-  top: 20px;
+  top: 30px;
   margin-left: 25vw;
-  position: absolute; /*changer la position du menu pour qu'elle reste en place*/
+  position: absolute;
 }
 
 .bouton {
-  margin-inline: 8px; /* espace entre boutons */
+  margin-inline: 8px;
   background-color: rgb(5, 0, 12);
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-decoration: none;
   font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border-style: groove;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-spacing: 30px;
+  border: groove;
+  border-radius: 10px 0 10px 10px;
   padding: 10px 17px;
   box-shadow: 4px 4px 9px 2px #868686;
   display: inline-block;
 }
 
-.membres {
-  border-radius: 50%;
-  border: 10px double white;
-  width: 15vw;
-  height: 15vw;
-  top: 150px;
-  left: 3vw;
-  position: absolute;
-  display: flex;
-}
-
-.fans {
-  margin-left: 10px;
-}
-
-/*Fin header*/
-
-/*Début main*/
-
-.top_titres {
-  float: right;
-}
-
 body {
   color: white;
-  background-repeat: repeat-x;
-  background: #242424;
-  background-size: 400px;
+  background: #10000d;
   overflow-x: hidden;
 }
-
 
 .biographie {
   float: left;
@@ -96,83 +82,60 @@ body {
   text-align: center;
 }
 
-.bio_plus {
+.bio_plus, .albums {
+  display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   height: 300px;
-  overflow-x: auto;
-  overflow-y: auto;
-  font-size: 17px;
   margin-top: 20px;
   text-align: center;
   line-height: 30px;
-  background-color: #1d1d1d;
-  font-size: 20px;
+  background-color: #10000d;
+}
+
+.bio_plus {
+  font-size: 17px;
 }
 
 a {
   color: rgb(210, 221, 108);
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .albums {
-  overflow: scroll;
-  overflow-x: auto;
-  overflow-y: auto;
-  flex-direction: row;
-  display: flex;
   height: 410px;
   width: 100%;
-  background-color: #1d1d1d;
-  background-size: contain;
-  border: solid 4px #111111;
-}
-
-.albums h2 {
-  text-align: center;
-  margin-top: 140px;
-  padding: 30px;
-  font-family: "Metal Mania", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 60px;
+  background-color: #22011c;
+  border: solid 4px #ffffff;
 }
 
 .albums .album {
   text-align: center;
+  margin-top: 20px;
 }
 
 .albums div img {
-  height: auto;
   width: 320px;
+  border: solid 1px white;
 }
-
-
-/*Fin main*/
-
-/*Début footer*/
 
 footer {
   background-color: black;
-  border-style: double;
-  border-color: rgb(47, 46, 46);
+  border: double rgb(47, 46, 46);
   height: 90px;
   width: 100%;
-  margin-top: 2500px;
+  margin-top: 500px;
 }
 
 .mail {
   text-decoration: none;
   color: aliceblue;
-  position: relative;
   margin: 10px;
 }
 
 .Logos {
-  position: relative;
   padding-left: 80%;
   padding-bottom: 20px;
   display: flex;
 }
-/*Fin footer*/

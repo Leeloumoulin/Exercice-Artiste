@@ -49,31 +49,23 @@
     </header>
 
     <main>
-      <iframe
-        id="Top"
-        class="top_titres"
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/artist/2ye2Wgw4gimLv2eAKyk1NB?utm_source=generator&theme=0"
-        width="500px"
-        height="750"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <!-- voir https://www.commoninja.com/audio-player/editor/styles/  ou    https://dash.elfsight.com/widget/2ff92625-7728-4055-97e1-f0c0778da2ba    à la place de spotify pour pouvoir personnaliser -->
-
-      <section class="albums">
-        <h2 id="Albums">Albums</h2>
-
-        <div class="album">
-          <strong>Kill 'Em All</strong>
+      <section class="container flex">
+        <div id="top" class="top_titres">
+          <h2 class="font_metal">Top Titres</h2>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-2ff92625-7728-4055-97e1-f0c0778da2ba" data-elfsight-app-lazy></div>
+      </div>
+      <div class="albums">        
+        <h2 id="Albums ">Albums</h2>
+      <section class="cartes flex space_between">
+        <div class="card">
+          <h4><strong>Kill 'Em All</strong></h4>
           <img src="Assets/Album_KEA.jpg" alt="album Kill'Em All" />
           <p>Sortie : 29 juillet 1983</p>
-        </div>
+      </div>
 
-        <div class="album">
-          <strong>Ride the Lightning</strong>
+        <div class="card">
+          <h4><strong>Ride the Lightning</strong></h4>
           <img
             src="Assets/RideTheLightning_album.jpg"
             alt="Album Ride the Lightning"
@@ -81,8 +73,8 @@
           <p>Sortie : 27 juillet 1984</p>
         </div>
 
-        <div class="album">
-          <strong>Master of Puppets</strong>
+        <div class="card">
+          <h4><strong>Master of Puppets</strong></h4>
           <img
             src="Assets/Master_of_puppets.jpg"
             alt="album Master of Puppets"
@@ -90,8 +82,8 @@
           <p>Sortie : 3 mars 1986</p>
         </div>
 
-        <div class="album">
-          <strong>...And Justice for All</strong>
+        <div class="card">
+          <h4><strong>...And Justice for All</strong></h4>
           <img
             src="Assets/Justice for all.jpg"
             alt="album And justice for All"
@@ -99,38 +91,39 @@
           <p>Sortie : 25 août 1988</p>
         </div>
 
-        <div class="album">
-          <strong>Metallica (The Black Album)</strong>
+        <div class="card">
+          <h4><strong>Metallica (The Black Album)</strong></h4>
           <img src="Assets/s-l400.jpg" alt="album The Black Album" />
           <p>Sortie : 12 août 1991</p>
         </div>
 
-        <div class="album">
-          <strong>Load</strong>
+        <div class="card">
+          <h4><strong>Load</strong></h4>
           <img src="Assets/load.jpg" alt="album Load" />
           <p>Sortie : 4 juin 1994</p>
         </div>
 
-        <div class="album">
-          <strong>ReLoad</strong>
+        <div class="card">
+          <h4><strong>ReLoad</strong></h4>
           <img src="Assets/Reload.jpg" alt="album Reload" />
           <p>Sortie : 18 novembre 1997</p>
         </div>
 
-        <div class="album">
-          <strong>St. Anger</strong
-          ><img src="Assets/st anger.jpg" alt="album St.Anger" />
+        <div class="card">
+          <h4><strong>St. Anger</strong
+          ></h4>
+          <img src="Assets/st anger.jpg" alt="album St.Anger" />
           <p>Sortie : 5 juin 2003</p>
         </div>
 
-        <div class="album">
-          <strong>Death Magnetic</strong>
+        <div class="card">
+          <h4><strong>Death Magnetic</strong></h4>
           <img src="Assets/death_magnetic.jpg" alt="album Death Magnetic" />
           <p>Sortie : 12 septembre 2008</p>
         </div>
 
-        <div class="album">
-          <strong>Hardwired… to Self-Destruct</strong>
+        <div class="card">
+          <h4><strong>Hardwired… to Self-Destruct</strong></h4>
           <img
             src="Assets/hardwired.jpg"
             alt="album Hardwired… to Self-Destruct"
@@ -138,12 +131,14 @@
           <p>Sortie : 18 novembre 2016</p>
         </div>
 
-        <div class="album">
-          <strong>72 Seasons </strong>
+        <div class="card">
+        <h4><strong>72 Seasons </strong></h4>
           <img src="Assets/72.jpg" alt="album 72 Seasons" />
           <p>Sortie : 14 avril 2023</p>
         </div>
       </section>
+      </div>
+    </container>
       <section>
         <h2 id="Artistes" class="artistes">Artistes Similaires</h2>
         <ul>

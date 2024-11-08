@@ -27,9 +27,13 @@
 }
 
 .container {
-  background-color: rgba(243, 109, 0, 0.219);
-  max-width: 1300px;
+  max-width: 1250px;
   width: 100%;
+  max-height: fit-content;
+  margin: auto;
+  padding: 20px;
+  border-bottom: solid 2px grey;
+  border-top: solid 2px grey;
 }
 
 .bouton {
@@ -68,9 +72,18 @@ nav {
 
 h1,
 .albums h2,
-.top_titres h2 {
+.top_titres h2,
+.artistes h2 {
   font-family: "Metal Mania", system-ui;
   font-weight: 400;
+}
+
+.albums h2,
+.top_titres h2,
+.artistes h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 header nav {
@@ -84,13 +97,14 @@ ul {
 
 .top_titres {
   width: fit-content;
-  margin-top: 80px;
+  margin-right: 20px;
+  border-right: solid 2px grey;
 }
 
 .biographie {
-  width: 40%;
   margin: auto;
-  margin-top: 180px;
+  margin-top: 190px;
+  max-width: 600px;
 }
 
 h1 {
@@ -99,21 +113,22 @@ h1 {
 }
 
 .albums {
-  width: 75%;
-}
-
-.cartes {
-  margin-top: 50px;
+  width: 70%;
+  margin: auto;
 }
 
 .card {
-  flex-direction: column;
   border-radius: 16px 16px 16px 16px;
   width: 210px;
   height: 320px;
   box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-color: #000000;
+  margin-bottom: 40px;
+}
+
+.card h4 {
+  height: 40px;
 }
 
 .card img {
@@ -121,143 +136,14 @@ h1 {
   height: 220px;
 }
 
-/*
-h1, .albums h2 {
-  font-family: "Metal Mania", system-ui;
-  font-weight: 400;
+.artistes ul {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 99%;
 }
 
-h1 {
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.Nom, .membres {
-  position: absolute;
-}
-
-.Nom {
-  left: 21vw;
-  top: 150px;
-}
-
-.membres {
-  top: 150px;
-  left: 3vw;
-  border: 10px double white;
+.artistes img {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  width: 15vw;
-  height: 15vw;
-  display: flex;
 }
-
-header {
-  background: url(Assets/47206-report-du-second-concert-de-metallica-au-stade-de-france-le-19-05-2023.jpg.jpg) no-repeat center/cover;
-  border: double;
-  border-radius: 30px;
-  height: 230px;
-  margin: 20px;
-}
-
-.top_titres {
-  float: right;
-  margin-right: 20px;
-}
-
-.navigation {
-  list-style: none;
-  display: flex;
-  text-align: center;
-  top: 30px;
-  margin-left: 25vw;
-  position: absolute;
-}
-
-.bouton {
-  margin-inline: 8px;
-  background-color: rgb(5, 0, 12);
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: groove;
-  border-radius: 10px 0 10px 10px;
-  padding: 10px 17px;
-  box-shadow: 4px 4px 9px 2px #868686;
-  display: inline-block;
-}
-
-body {
-  color: white;
-  background: #10000d;
-  overflow-x: hidden;
-}
-
-.biographie {
-  float: left;
-  display: grid;
-  position: relative;
-  top: 150px;
-  width: 600px;
-  height: 300px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.bio_plus, .albums {
-  display: flex;
-  flex-direction: row;
-  overflow: auto;
-  height: 300px;
-  margin-top: 20px;
-  text-align: center;
-  line-height: 30px;
-  background-color: #10000d;
-}
-
-.bio_plus {
-  font-size: 17px;
-}
-
-a {
-  color: rgb(210, 221, 108);
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.albums {
-  
-  background-color: #22011c;
-  border: solid 4px #ffffff;
-}
-
-.albums .album {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.albums div img {
-  width: 320px;
-  border: solid 1px white;
-}
-
-footer {
-  background-color: black;
-  border: double rgb(47, 46, 46);
-  height: 90px;
-  width: 100%;
-  margin-top: 500px;
-}
-
-.mail {
-  text-decoration: none;
-  color: aliceblue;
-  margin: 10px;
-}
-
-.Logos {
-  padding-left: 80%;
-  padding-bottom: 20px;
-  display: flex;
-}
-*/
